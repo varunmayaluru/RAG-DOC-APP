@@ -27,9 +27,15 @@ http://localhost:8501
 ## Commands to clean up house
 
 ### Stop and remove all running containers
+
 docker stop $(docker ps -a -q)
+
 docker rm $(docker ps -a -q)
+
 ### Remove all Docker images
+
 docker rmi $(docker images -a -q)
+
 ### Remove all Docker networks
+
 docker network rm $(docker network ls -q)
