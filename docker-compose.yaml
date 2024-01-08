@@ -4,7 +4,7 @@ services:
   frontend:
     image: varunm58/rg-frontend:0.0.1
     ports:
-      - "8051:8051" # Adjust if your frontend listens on a different port
+      - "8501:8501" # Adjust if your frontend listens on a different port
     depends_on:
       - backend
 
