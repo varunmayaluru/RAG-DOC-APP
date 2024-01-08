@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  frontend:
+    image: varunm58/rg-frontend:0.0.1
+    ports:
+      - "8051:8051" # Adjust if your frontend listens on a different port
+    depends_on:
+      - backend
+
+  backend:
+    image: varunm58/rg-backend:0.0.1
+    ports:
+      - "8000:8000" # Adjust if your backend listens on a different port
